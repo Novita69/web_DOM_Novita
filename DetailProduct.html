@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="DetailProduct.css">
+    <title>Details Product</title>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h2 class="logo"> Novita's Olshop</h2>
+        <ul class="nav">
+            <li><a href="">Search</a></li>
+            <li><a href="Home.html">Dashboard</a></li>
+            <li><a href="CatalogProduct.html">Catalog Product</a></li>
+            <li><a href="">Shopping Cart</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="container-product">
+
+        <div class="product">
+            <img src="asset/oatmeal.jpg" alt="oatmeal"><br><br>
+            <h2>
+                <center>Oatmeal 500gr</center>
+            </h2>
+        </div>
+
+
+        <script>
+
+            function descProduct() {
+                let text = document.getElementsByTagName("p");
+                document.getElementById("text").innerHTML = text[0].innerHTML;
+
+            }
+
+        
+
+        </script>
+
+
+        <div class="desc-style">
+            <p>Oatmeal terbuat dari oat yang direbus bersama dengan air atau susu.
+                Oat (Avena sativa) diklaim sebagai salah satu biji-bijian tersehat
+                di dunia yang bebas gluten dan memiliki sumber vitamin, mineral, serat,
+                dan antioksidan yang tinggi
+            </p>
+        </div>
+
+        <div class="desc-style">
+
+            <p id="text"></p>
+
+        </div>
+    </div>
+
+    <div style="margin-left: 650px;">
+
+        <button onclick="descProduct();">Show to next description product</button>
+    
+    </div>
+
+
+</body>
+
+</html>
